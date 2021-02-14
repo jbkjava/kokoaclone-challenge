@@ -19,8 +19,7 @@
 
 .nav__notification {
   position: absolute;
-  left: 15px;
-  bottom: 15px;
+  background-color: tomato;
 }
 
 .nav__notification--sm {

@@ -11,6 +11,15 @@
   font-weight: 600;
 }
 
-.screen-header__icons span {
+.screen-header__icons > span,
+.screen-header__icons a {
   margin-left: 25px;
+}
+
+.screen-header__notification {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  left: 23px;
+  bottom: 20px;
 }
