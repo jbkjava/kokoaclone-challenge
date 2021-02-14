@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="chat-screen">
+    <!-- 왠만한 서버들은 첫 페이지로서 index 페이지를 검색하도록 설정이 된다.  -->
+    <div class="status-bar">
+      <!-- naming rule
+            너무 흔한(generic)한 이름을 부여해주게 되면
+            코드 작업을 하면서 비슷한 유형에 이름을 부여해 줄때 애로사항이 생긴다
+            그래서 조금 길지만 상세한 이름을 부여해 주는 것에 습관화
+            이렇게 하면 클래스가 어떤 성향을 띄는지 쉽게 알 수 있다.
+            parent with child
+        -->
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+        <!-- with js, get current time of pc -->
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Kayru</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Monday, February 15, 2021</div>
+
+      <div class="message-row">
+        <img src="image/kayru.jpg" alt="" />
+        <div class="message-row__content">
+          <span class="message__author">Kayru</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi, Nice to meet you!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/12c3b3e85d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
