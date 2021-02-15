@@ -1,6 +1,6 @@
 .chat-screen {
   background-color: #abc1d1;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .chat-screen .status-bar {
