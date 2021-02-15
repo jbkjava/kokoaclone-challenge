@@ -6,7 +6,7 @@
     <title>Find - Kokoa Clone</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="scroll-screen">
     <!-- 왠만한 서버들은 첫 페이지로서 index 페이지를 검색하도록 설정이 된다.  -->
     <div class="status-bar">
       <!-- naming rule
@@ -37,7 +37,7 @@
         <span><i class="fas fa-search fa-lg"></i></span>
         <div class="nav__link">
           <span class="nav__notification screen-header__notification"> </span>
-          <i class="fas fa-cog fa-lg"></i>
+          <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
         </div>
       </div>
     </header>
@@ -72,20 +72,41 @@
         </div>
         <div class="open-post">
           <div class="open-post__column">
-            <h5 class="open-post__title">#bts</h5>
-            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <h5 class="open-post__title">#Alan Walker</h5>
+            <h6 class="open-post__hashtags">#walker #edm #friends</h6>
             <div class="open-post__members">
-              <img src="image/self.jpg" alt="" />
-              <span class="open-post__members-count">802 members</span>
+              <img src="image/walker.jpg" alt="" />
+              <span class="open-post__members-count">30.4k members</span>
               <div class="divider"></div>
               <span class="open-post__members-status">Active</span>
             </div>
           </div>
           <div class="open-post__column">
             <div class="open-post__photo">
-              <img src="image/self.jpg" alt="" />
+              <img src="image/walker.jpg" alt="" />
               <div class="open-post__heart-count">
-                <i class="fas fa-heart fa-xs"></i><span>326</span>
+                <i class="fas fa-heart fa-xs"></i><span>38.48m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#EpicSeven</h5>
+            <h6 class="open-post__hashtags">#no.1rpg #update</h6>
+            <div class="open-post__members">
+              <img src="image/epicseven.jpg" alt="" />
+              <span class="open-post__members-count">3.4k members</span>
+              <div class="divider"></div>
+              <span class="open-post__members-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="image/epicseven.jpg" alt="" />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>1.42k</span>
               </div>
             </div>
           </div>
@@ -102,7 +123,9 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification nav__notification--alert badge"
+              >1</span
+            >
             <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
@@ -119,6 +142,10 @@
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big...</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/12c3b3e85d.js"

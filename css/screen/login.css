@@ -43,6 +43,10 @@
   border-color: var(--yellow);
 }
 
+#login-form input:not([type="submit"]):valid {
+  border: 2px solid green;
+}
+
 #login-form input[type="submit"] {
   background-color: var(--yellow);
   cursor: pointer;
@@ -58,4 +62,31 @@
   /*
       css에서 inherit는 자식요소가 포함된 직속 부모요소의 해당 요소값을 상속받는다는 의미.
     */
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  animation: hideSplashScreen 1s 2s ease-in-out forwards;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /*
+      Element를 browser상에서 100% 보이지 않게(=제거) 하기 위해서
+      JS가 필요하다.
+    */
+  }
 }

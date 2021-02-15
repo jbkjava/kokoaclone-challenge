@@ -6,7 +6,7 @@
     <title>Settings - Kokoa Clone</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="scroll-screen--lg">
     <!-- 왠만한 서버들은 첫 페이지로서 index 페이지를 검색하도록 설정이 된다.  -->
     <div class="status-bar">
       <!-- naming rule
@@ -69,6 +69,81 @@
           <div class="settings__setting-column">Latest Version</div>
         </li>
       </ul>
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-lock"></i>
+            <span>Security</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bell"></i>
+            <span>Alarm</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-user"></i>
+            <span>Friends</span>
+          </div>
+          <div class="settings__setting-column">You need more Freiends</div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-comment"></i>
+            <span>Chattings</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-comments"></i>
+            <span>Word collect</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-adjust"></i>
+            <span>Screen</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-brush"></i>
+            <span>Theme</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-phone-alt"></i>
+            <span>telephone</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-ellipsis-h"></i>
+            <span>Etc</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+      </ul>
+
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Service center / Help</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+      </ul>
     </main>
 
     <nav class="nav">
@@ -80,7 +155,9 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification nav__notification--alert badge"
+              >1</span
+            >
             <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
@@ -97,6 +174,10 @@
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big...</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/12c3b3e85d.js"

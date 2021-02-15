@@ -1,3 +1,7 @@
+#find-screen {
+  height: 110vh;
+}
+
 .recommended-firend {
   margin: 25px 0px;
   padding: 25px 0px;
@@ -33,6 +37,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.open-post:hover {
+  box-shadow: 0 2px 1px -1px white;
 }
 
 .open-post__title {
@@ -99,4 +109,28 @@
 
 .open-post__heart-count span {
   margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  /*
+    gpu으로 하여금 브라우저 상에서 동작하는 animation을 더 매끄럽게 해줄 수 있는 속성
+    값으로는 부드럽게 수행할 속성을 기입.
+  */
+  animation: heartBeat 2s linear infinite;
 }

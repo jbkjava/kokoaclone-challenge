@@ -37,7 +37,10 @@
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="far fa-comment-dots fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <div class="nav__link">
+          <span class="nav__notification screen-header__notification"> </span>
+          <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+        </div>
       </div>
     </header>
 
@@ -45,53 +48,31 @@
       <a href="chat.html">
         <div class="user-component">
           <div class="user-component__column">
-            <img src="image/self.jpg" alt="" class="user-component__avatar" />
+            <img src="image/kayru.jpg" alt="" class="user-component__avatar" />
             <div class="user-component__text">
-              <h4 class="user-component__title">Nicolas</h4>
-              <h6 class="user-component__subtitle">
-                Please check my kakao info
-              </h6>
+              <h4 class="user-component__title">Kyaru</h4>
+              <h6 class="user-component__subtitle">Hi! Happy new year!</h6>
             </div>
           </div>
           <div class="user-component__column">
             <span class="user-compoent__time">21:22</span>
-            <div class="badge">1</div>
+            <div class="badge">6</div>
           </div>
         </div>
       </a>
 
-      <a href="chat.html">
+      <a href="selfchat.html">
         <div class="user-component">
           <div class="user-component__column">
             <img src="image/self.jpg" alt="" class="user-component__avatar" />
             <div class="user-component__text">
-              <h4 class="user-component__title">Nicolas</h4>
-              <h6 class="user-component__subtitle">
-                Please check my kakao info
-              </h6>
+              <h4 class="user-component__title">JunBeam</h4>
+              <h6 class="user-component__subtitle">Must study everyday!!</h6>
             </div>
           </div>
           <div class="user-component__column">
             <span class="user-compoent__time">21:22</span>
-            <div class="badge">1</div>
-          </div>
-        </div>
-      </a>
-
-      <a href="chat.html">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img src="image/self.jpg" alt="" class="user-component__avatar" />
-            <div class="user-component__text">
-              <h4 class="user-component__title">Nicolas</h4>
-              <h6 class="user-component__subtitle">
-                Please check my kakao info
-              </h6>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <span class="user-compoent__time">21:22</span>
-            <div class="badge">1</div>
+            <div class="badge">3</div>
           </div>
         </div>
       </a>
@@ -106,7 +87,9 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="#">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification nav__notification--alert badge"
+              >1</span
+            >
             <i class="fas fa-comment fa-2x"></i>
           </a>
         </li>
@@ -123,6 +106,10 @@
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big...</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/12c3b3e85d.js"

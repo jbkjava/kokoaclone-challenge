@@ -1,0 +1,24 @@
+#no-mobile,
+#no-landscape {
+  position: absolute;
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+}
+
+/* max와 min의 차이
+    max-width 조건 : width의 값이 일정 미만 일 때 동안 css 블럭 수행
+    min-width 조건 : width의 값이 일정 이상 일 때 동안 css 블럭 수행 
+  */

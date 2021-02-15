@@ -10,6 +10,7 @@
 @import "components/notification-dot.css";
 @import "components/icon-raw.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /*screen*/
 @import "screen/login.css";
@@ -18,10 +19,12 @@
 @import "screen/more.css";
 @import "screen/settings.css";
 @import "screen/chat.css";
+@import "screen/scroll-screen.css";
 
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
+  background-color: skyblue;
 }
 
 .main-screen {

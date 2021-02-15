@@ -44,7 +44,7 @@
     </header>
 
     <main class="main-screen more-screen">
-      <div class="user-component">
+      <div class="user-component user-component--self">
         <div class="user-component__column">
           <img
             src="image/self.jpg"
@@ -52,7 +52,7 @@
             class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">Nicolas</h4>
+            <h4 class="user-component__title">JunBeam</h4>
             <h6 class="user-component__subtitle">
               + 010 8562 0581 <i class="fas fa-exclamation-circle"></i>
             </h6>
@@ -63,31 +63,34 @@
         </div>
       </div>
       <div class="icon-row">
-        <div class="icon-row__icon">
+        <div class="icon-row__icon more-icon">
+          <span class="nav__notification more-icon__notification"></span>
           <i class="far fa-calendar"></i><span>Calendar</span>
         </div>
-        <div class="icon-row__icon">
+        <div class="icon-row__icon more-icon">
           <i class="far fa-smile-beam"></i><span>Emoticons</span>
         </div>
-        <div class="icon-row__icon">
+        <div class="icon-row__icon more-icon">
           <i class="fas fa-paint-roller"></i><span>Themes</span>
         </div>
-        <div class="icon-row__icon">
+        <div class="icon-row__icon more-icon">
           <i class="fas fa-file-invoice-dollar"></i><span>Account</span>
         </div>
       </div>
       <div class="icon-row">
-        <div class="icon-row__icon">
-          <i class="far fa-calendar"></i><span>Calendar</span>
+        <div class="icon-row__icon more-icon">
+          <i class="fas fa-gift"></i><span>Gift</span>
         </div>
-        <div class="icon-row__icon">
-          <i class="far fa-smile-beam"></i><span>Emoticons</span>
+        <div class="icon-row__icon more-icon">
+          <span class="nav__notification more-icon__notification"></span>
+          <i class="fab fa-shopify"></i><span>Shoping</span>
         </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-paint-roller"></i><span>Themes</span>
+        <div class="icon-row__icon more-icon">
+          <i class="fas fa-camera"></i><span>Picture</span>
         </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-file-invoice-dollar"></i><span>Account</span>
+        <div class="icon-row__icon more-icon">
+          <span class="nav__notification more-icon__notification"></span>
+          <i class="fas fa-utensils"></i><span>Food</span>
         </div>
       </div>
 
@@ -102,9 +105,9 @@
           </div>
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
-              <i class="fas fa-quote-right"></i>
+              <i class="fas fa-wallet"></i>
             </div>
-            <span class="more-suggestions__icon-text">Kokoa Story</span>
+            <span class="more-suggestions__icon-text">Kokoa Pay</span>
           </div>
         </div>
       </div>
@@ -119,7 +122,9 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification nav__notification--alert badge"
+              >1</span
+            >
             <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
@@ -136,6 +141,10 @@
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big...</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/12c3b3e85d.js"
