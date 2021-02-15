@@ -1,9 +1,15 @@
 .alt-header {
   padding: var(--horizontal-space);
   margin-bottom: 15px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: skyblue;
 }
 
 .alt-header__title {

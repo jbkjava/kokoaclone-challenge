@@ -20,7 +20,7 @@
   background-color: #abc1d1;
 }
 
-.main-chat {
+.chat-screen .main-chat {
   margin-top: 140px;
   display: flex;
   flex-direction: column;
