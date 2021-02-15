@@ -4,6 +4,10 @@
   margin-bottom: 10px;
 }
 
+.user-component--self {
+  padding-bottom: 0px;
+}
+
 .user-component:not(.user-component--self):hover {
   box-shadow: 0 2px 1px -1px white;
 }
